@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" />
+	<title>Survey Form</title>
+</head>
+<body>
+	<header>
+		<h1 id="title" for="description">DND Character Form</h1>
+		<p id="description">This is a Dungeon's and Dragons character form for the upcomming campaign</p>
+	</header>
+
+	<div class="whole">
+		<form id="survey-form">
+			<fieldset>
+				<h2>General Information</h2>
+				<label for="name" id="name-label">Name <input type="text" name="name" id="name" placeholder="Enter name here..." required/></label>
+				<label for="race" id="race-label">Race <input type="text" name="race" id="race" placeholder="Specify character's race..." required/></label>
+	        	<label for="number" id="number-label">Age<input id="number" type="number" name="number-label" id="number-label" min="1" max="1000000000" placeholder="Age" /></label>
+	        	<p>Relationship Status</p>
+        		<label for="relationship-status">
+          			<select id="relationship-status" name="dropdown">
+            			<option value="">Not specified</option>
+            			<option value="1">Single</option>
+            			<option value="2">Married</option>
+            			<option value="3">Monogamous relationship</option>
+            			<option value="4">Polyamorous reletionship</option>
+            			<option value="5">Widowed</option>
+          			</select>
+        		</label>
+	        	<label for="deity" id="deity-label">Deity <input type="text" name="deity" id="deity" /></label>
+
+    	    	<p>What is your character's gender?</p>
+        		<label for="dropdown">
+          			<select id="dropdown" name="dropdown">
+            			<option value="">Agender</option>
+            			<option value="1">Genderfluid</option>
+            			<option value="2">Non-binary</option>
+            			<option value="3">Male</option>
+            			<option value="4">Female</option>
+            			<option value="5">Unspecified</option>
+          			</select>
+        		</label>
+        	</fieldset>
+
+        	<fieldset>
+        		<h2>Appearance</h2>
+        		<label for="size" id="size-label">Size <input type="text" name="size" id="size" /></label>
+        		<label for="bodytype" id="bodytype-label">Bodytype <input type="text" name="bodytype" id="bodytype" /></label>
+        		<label for="height" id="height-label">Height <input type="text" name="height" id="height" /></label>
+        		<label for="weight" id="weight-label">Weight <input type="text" name="weight" id="weight" /></label>
+        		<label for="complexion" id="complexion-label">Complexion <input type="text" name="compexion" id="complexion" /></label>
+        		<label for="hair" id="hair-label">Hair <input type="text" name="hair" id="hair" /></label>
+        		<label for="eyes" id="eyes-label">Eyes <input type="text" name="eyes" id="eyes" /></label>
+        		<label for="handedness" id="handedness-label">Handedness <input type="text" name="handedness" id="handedness" /></label>
+        		<label for="scars" id="scars-label">Scars <input type="text" name="scars" id="scars" /></label>
+
+        		<label for="appearance-description">Appearance Description          		
+    	    		<textarea id="appearance-description" name="appearance-description" rows="5" cols="30" placeholder="Describe the character's appearance..."></textarea>
+        	</fieldset>
+
+        	<fieldset>
+        		<h2>Personality</h2>
+        		<label for="alignment" id="alignment-label">Alignment <input type="text" name="alignment" id="alignment" /></label>
+        		<label for="mannerism" id="mannerism-label">Mannerisms <input type="text" name="mannerism" id="mannerism" /></label>
+        		<label for="likes" id="likes-label">Likes <input type="text" name="likes" id="likes" /></label>
+        		<label for="dislikes" id="dislikes-label">Dislikes <input type="text" name="dislikes" id="dislikes" /></label>
+        	</fieldset>
+
+        	<fieldset>
+        		<h2>Techinicality</h2>
+	       		<p>What is your character's job class?</p>
+    	   		<label for="job-class">
+        	  		<select id="job-class" name="dropdown">
+            			<option value="1">Barbarian</option>
+            			<option value="2">Bard</option>
+            			<option value="3">Cleric</option>
+	            		<option value="4">Druid</option>
+    	        		<option value="5">Fighter</option>
+    	        		<option value="6">Monk</option>
+    	        		<option value="7">Paladin</option>
+    	        		<option value="8">Ranger</option>
+    	        		<option value="9">Rogue</option>
+    	        		<option value="10">Sorcerer</option>
+    	        		<option value="11">Warlock</option>
+    	        		<option value="12">Wizard</option>
+    	        		<option value="13">Artificer</option>
+    	        		<option value="14">Blood Hunter</option>
+        	  		</select>
+        		</label>
+			
+				<p>Pick your starting items.<span>(Be mindful of your character's weight limit.)</span></p>
+				<label for="aoh" name="improve">
+          			<input id="aoh" type="checkbox" name="improve" class="inline" value="1" />
+          			Amulet of Health
+	        	</label>
+    	    	<label for="bob" name="improve">
+        	  		<input id="bob" type="checkbox" name="improve" class="inline" value="2" />
+          			Bag of Bounty
+        		</label>
+	        	<label for="ba" name="improve">
+    	      		<input id="ba" type="checkbox" name="improve" class="inline" value="3" />
+          			Berserker Axe
+        		</label>
+        		<label for="cof" name="improve">
+          			<input id="cof" type="checkbox" name="improve" class="inline" value="4" />
+        	  		Carpet of Flying
+	        	</label>
+    	    	<label for="cb" name="improve">
+     	     		<input id="cb" type="checkbox" name="improve" class="inline" value="5" />
+        	  		Cloak Billowing
+        		</label>
+        		<label for="dov" name="improve">
+          			<input id="dov" type="checkbox" name="improve" class="inline" value="6" />
+	          		Dagger of Venom
+    	    	</label>
+        		<label for="ds" name="improve">
+          			<input id="ds" type="checkbox" name="improve" class="inline" value="7" />
+        	  		Dancing Sword
+    	    	</label>
+	        	<label for="db" name="improve">
+    	      		<input id="db" type="checkbox" name="improve" class="inline" value="8" />
+        	  		Dawn Bringer
+	        	</label>
+	   	     	<label for="eg" name="improve">
+    	      		<input id="eg" type="checkbox" name="improve" class="inline" value="9" />
+          		Elemental Gem
+   		     	</label>
+    	    	<label for="ft" name="improve">
+        	  		<input id="ft" type="checkbox" name="improve" class="inline" value="10" />
+       		   		Flame Tongue
+    	    	</label>
+  		      	<label for="gl" name="improve">
+    	      		<input id="gl" type="checkbox" name="improve" class="inline" value="11" />
+    	      		Ghost Lantern
+    	    	</label>
+			</fieldset>
+
+			<fieldset>
+				Backstory
+				<label for="bio">Background and History          		
+    	    		<textarea id="comment" name="comment" rows="5" cols="30" placeholder="Describe character's backstory..."></textarea>
+							<p>Show that you own this character? </p>
+    	   		<label for="definitely"><input id="definitely" type="radio" name="recommend" class="inline" value="1" /> Yes, played by me.</label>
+       			<label for="notsure"><input id="notsure" type="radio" name="recommend" class="inline" value="3"/> No, played anonymously.</label>
+	        	</label>
+						<label for="email" id="email-label">Please input email to allow the DM to send you updates <input type="email" name="email" id="email" placeholder="Enter your Email" required /></label>
+			</fieldset>
+
+			<input type="submit" value="Submit" id="submit" />
+		</form>
+	</div>
+	
+</body>
+</html>
